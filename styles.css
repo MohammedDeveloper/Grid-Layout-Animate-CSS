@@ -1,0 +1,71 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.7em;
+    grid-row-gap: 0.7em;
+}
+
+.bg-success{
+    background: rgb(45,137,239) !important;
+}
+
+.wrapper .nested1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper .nested1 .box1 {
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.wrapper .nested4 .box1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.wrapper .nested2 {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper .nested2 div {
+    background:rgb(45,137,239);
+    color: white;
+}
+
+.wrapper .nested2 div:nth-child(even) {
+    background:#b91d47;
+    color: white;
+}
+
+.wrapper .nested1 div {
+    background:#9f00a7;
+    color: white;
+}
+
+.wrapper .nested1 div:first-child {
+    background:  #00aba9;
+    color: white;
+}
+
+.wrapper .nested1 div:nth-child(even) {
+    background:#00a300;
+    color: white;
+}
+
+.wrapper > div:nth-child(odd) {
+    background: #eff4ff;
+    color: black;
+}
+
+.wrapper > div:nth-child(even) {
+    background:#eff4ff;
+    color: black;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "animate-grid-layout-css",
+  "version": "1.0.0",
+  "description": "Demo using Animate CSS framework, Grid Layout",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server --port 7861",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohammed Rafi Kaleem",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
